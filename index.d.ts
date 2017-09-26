@@ -180,7 +180,8 @@ declare module 'react-native-material-ui' {
     name?: string
     onPress?(): void
   }
-
+  interface IDivider { 
+  }
   export class ActionButton extends Component<IActionButton, any> {}
   export class Button extends Component<IButton, any> {}
   export class Checkbox extends Component<ICheckBox, any> {}
@@ -188,7 +189,7 @@ declare module 'react-native-material-ui' {
   export class ThemeProvider extends Component<IThemeProvider, any> {}
   export class Toolbar extends Component<IToolbar, any> {}
   export class Card extends Component<ICard, any> {}
-  export class Divider extends Component<any, any> {}
+  export class Divider extends Component<IDivider, any> {}
   export class Avatar extends Component<IAvatar, any> {}
   export class Drawer extends Component<IDrawer, any> {}
   export namespace Drawer {
